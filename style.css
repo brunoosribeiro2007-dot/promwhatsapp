@@ -49,8 +49,11 @@ body {
 /* Container Layout */
 .container {
     width: 100%;
-    max-width: 450px;
-    padding: 2rem;
+    max-width: 480px;
+    min-height: calc(100vh - 2rem);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
     text-align: center;
     animation: fadeIn 1s ease-out;
 }
@@ -62,7 +65,7 @@ body {
 
 /* Profile Section */
 .profile {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .avatar-wrapper {
@@ -115,7 +118,8 @@ body {
 .links-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
+    flex-grow: 1; /* Pushes the footer down */
 }
 
 .link-card {
@@ -187,9 +191,10 @@ body {
 
 /* Footer */
 .footer {
-    margin-top: 3rem;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
     color: var(--ml-gray);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     opacity: 0;
     animation: fadeIn 1s ease forwards;
     animation-delay: 0.8s;
