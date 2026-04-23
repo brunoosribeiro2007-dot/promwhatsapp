@@ -41,13 +41,15 @@ body {
 
 /* Footer stays at bottom */
 .footer {
-    margin-top: auto;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
     color: var(--ml-gray);
     font-size: 0.85rem;
     opacity: 0;
     animation: fadeIn 1s ease forwards;
     animation-delay: 0.8s;
     text-align: center;
+    line-height: 1.8;
 }
 
 /* Responsive adjustments for small screens */
