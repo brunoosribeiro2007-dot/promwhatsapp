@@ -36,20 +36,21 @@ body {
     padding: 2rem;
     text-align: center;
     animation: fadeIn 1s ease-out;
-    flex: 1 0 auto;
+    flex: 1;
 }
 
-/* Footer stays at bottom */
+/* Footer fixed at very bottom */
 .footer {
-    margin-top: 4rem;
-    padding-bottom: 2rem;
+    width: 100%;
+    padding: 1.5rem 1rem 2rem;
     color: var(--ml-gray);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.8;
     opacity: 0;
     animation: fadeIn 1s ease forwards;
     animation-delay: 0.8s;
-    text-align: center;
-    line-height: 1.8;
+    flex-shrink: 0;
 }
 
 /* Responsive adjustments for small screens */
